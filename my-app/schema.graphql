@@ -1,0 +1,24 @@
+
+
+type Issue {
+  _id: ID!
+  quizzes:[quizzes]
+    
+}
+
+type quizzes{
+    wk:Int
+    score:Int
+
+}
+##### Top level declarations
+
+type Query {
+  about: String!
+  issueList: [Issue!]!
+  filterIssue(
+    id: Int
+  ): [Issue!]!
+ 
+}
+
